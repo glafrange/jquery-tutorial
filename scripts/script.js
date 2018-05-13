@@ -1,36 +1,34 @@
-    // PART5
+    //PART 7
+
+// next
+//$("#contact-methods").next().css({border: '3px solid red'});
+
+// prev
+//$("#social-nav").prev().css({border: "3px solid blue"});
+
+// parent
+//$(".banner-title").parents().css({border: "3px solid pink"});
+
+// children
+//$("#social-nav").children().css({border: "3px solid green"});
+
+// find
+//$("#contact").find(".facebook").css({border: "3px solid purple"});
+
+// closest
+//$("#social-nav").closest(".wrapper").css({border: "3px solid orange"});
+
+
+    //PART 8
+/*$("#contact-methods").css({border: "2px solid red"})
+    .next().css({border: "2px solid green"})
+    .closest("section").css({border: "2px solid blue"});*/
     
-/*$("h3").css({border: "3px solid blue"});
-$(".wrapper").css({border: "3px solid red"});
-$("#clients").css({border: "3px solid yellow"});*/
 
 
+    //PART 9
+// pull in latest tweet
+var tweet = "The big fight live: Ham vs Cheese";
 
-    // PART6
-
-// first and last
-/*$("header nav li:first").css({border: "2px solid red"});
-$("header nav li:last").css({border: "2px solid red"});*/
-
-// first-child and last-child
-/*$("#contact ul:first-child").css({border: "2px solid red"});
-$("#contact ul:last-child").css({border: "2px solid red"});*/
-
-// odd and even
-/*$("header nav li:even").css({border: "2px solid blue"});
-$("header nav li:odd").css({border: "2px solid yellow"});*/
-
-// not
-//$("section:not('#contact')").css({border: "2px solid green"});
-
-// less than
-//$("#social-nav li:lt(3)").css({border: "2px solid blue"})
-
-// greater than
-//$("#social-nav li:gt(2)").css({border: "2px solid blue"})
-
-// attribute filters
-//$("img[alt]").css({border: "2px solid pink"})
-
-// attribute with specific value
-//$("img[alt=quote]").css({border: "2px solid purple"})
+$("#tweets div p").text(tweet);
+// adding and changing content
