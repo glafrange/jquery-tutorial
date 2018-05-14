@@ -1,34 +1,28 @@
-    // Part 13
-    
-/*$("#social-nav").css({
-    "top": "-400px",
-    "left": "158px",
-    "opacity": "0.5",
-    "border-top": "4px solid red"
+    // Part 16
+
+$("#lead-banner").dblclick(function(){
+   alert("you clicked me"); 
+   $("#lead-banner").off("dblclick");
 });
-*/
+
 
     
+    // Part 17
     
-    // Part 14
+/*$(window).load(function(){
     
-$("header .wrapper").removeClass("wrapper");
-$("header > div").addClass("wrapper");
-
-var button = $("#lead-banner a");
-
-button[0].onclick = function(){
-    $("#points-of-sale").toggleClass("open");
-    return false;
-}
+});*/
 
 
 
-    // Part 15
+    // Part 18
     
-var myLis = $("#points-of-sale li");
-
-myLis.on("click", function(){
-    $(this).css({background: "pink"});
-    myLis.off("click");
+$(document).ready(function(){
+   $("*").on("click", function(e){
+        console.log(e.target);
+        console.log("the event tag is " + e.type);
+        console.log("X coordinate of the event is: " + e.pageX);
+        console.log("Y coordinate of the event is: " + e.pageY);
+        e.stopPropagation();
+   });
 });
