@@ -1,34 +1,31 @@
-    //PART 7
+    // Part 10
 
-// next
-//$("#contact-methods").next().css({border: '3px solid red'});
+/*var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
 
-// prev
-//$("#social-nav").prev().css({border: "3px solid blue"});
-
-// parent
-//$(".banner-title").parents().css({border: "3px solid pink"});
-
-// children
-//$("#social-nav").children().css({border: "3px solid green"});
-
-// find
-//$("#contact").find(".facebook").css({border: "3px solid purple"});
-
-// closest
-//$("#social-nav").closest(".wrapper").css({border: "3px solid orange"});
+button[0].onclick = function(){
+    if(wrapped){
+        $("section").unwrap();
+        wrapped = false;
+        button.text("wrap");
+    } else {
+        $("section").wrapAll(wrapper);
+        wrapped = true;
+        button.text("unwrap");
+    }
+}*/
 
 
-    //PART 8
-/*$("#contact-methods").css({border: "2px solid red"})
-    .next().css({border: "2px solid green"})
-    .closest("section").css({border: "2px solid blue"});*/
-    
+    // Part 11
+
+/*$(".button").remove();
+$("#contact img").remove();*/
 
 
-    //PART 9
-// pull in latest tweet
-var tweet = "The big fight live: Ham vs Cheese";
 
-$("#tweets div p").text(tweet);
-// adding and changing content
+    // Part 12
+
+//$("#contact img").removeAttr("alt");
+//$("#contact img").attr("alt", "location");
+//console.log($("#contact img").attr("alt"));
