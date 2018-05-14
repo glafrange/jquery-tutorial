@@ -1,28 +1,36 @@
-    // Part 16
+    // Part 19
 
-$("#lead-banner").dblclick(function(){
-   alert("you clicked me"); 
-   $("#lead-banner").off("dblclick");
-});
-
-
-    
-    // Part 17
-    
-/*$(window).load(function(){
-    
+/*$(document).ready(function(){
+    function complete(){
+        alert("animation complete");
+    }
+    $("section > h2").on("click", function(){
+        $(this).animate({"width" : "500px", "height" : "100px"}, 1000, "linear", complete); 
+    });
 });*/
 
 
 
-    // Part 18
+    // Part 20
     
+/*$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        //$(this).fadeOut(2000).fadeIn(500); 
+        $(this).fadeTo(200, 0.2)
+               .fadeTo(200, 0.8)
+               .fadeTo(200, 0.2)
+               .fadeTo(200, 0.8)
+               .fadeTo(200, 0.2)
+               .fadeTo(200, 0.8);
+    });
+});*/
+
+
+
+    // Part 21
+
 $(document).ready(function(){
-   $("*").on("click", function(e){
-        console.log(e.target);
-        console.log("the event tag is " + e.type);
-        console.log("X coordinate of the event is: " + e.pageX);
-        console.log("Y coordinate of the event is: " + e.pageY);
-        e.stopPropagation();
-   });
+    $("img[alt=map]").on("click", function(){
+        $("section > h2").toggle(1000);
+    });
 });
